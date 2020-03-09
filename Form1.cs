@@ -24,7 +24,7 @@ namespace SistemaCantina
         private void label3_TextChanged(object sender, EventArgs e)
         {
         }
-        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        public void txtCodigo_TextChanged(object sender, EventArgs e)
         {
             if (txtCodigo.Text.Length == 3)
             {
@@ -85,6 +85,16 @@ namespace SistemaCantina
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnPagar_Click(object sender, EventArgs e)
+        {
+            Form2 FormPagar = new Form2();
+            FormPagar.ShowDialog();
+        }
+
+        private void btnPagar_MouseClick(object sender, MouseEventArgs e)
+        {
         }
     }
 }
